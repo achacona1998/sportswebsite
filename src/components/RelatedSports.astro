@@ -1,0 +1,14 @@
+---
+import { StickyCards } from "../reactcomponents/scrollStickyCards";
+import TimelineAnimation from "../reactcomponents/TimelineAnimation";
+// RelatedSports.astro
+---
+
+<section id="related-sports" class="relative bg-emerald-100">
+
+  <div class="section-container">
+    <StickyCards client:load />
+
+    <TimelineAnimation client:visible />
+  </div>
+</section>

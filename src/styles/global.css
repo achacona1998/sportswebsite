@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+
+@layer components {
+  .btn {
+    @apply inline-flex justify-center items-center px-5 py-3 font-medium rounded-lg transition-colors;
+  }
+
+  .btn-primary {
+    @apply text-white bg-blue-600 hover:bg-blue-900;
+  }
+
+  .btn-secondary {
+    @apply text-blue-600 bg-white border border-blue-600 hover:bg-gray-50;
+  }
+
+  .section-container {
+    @apply container px-4 py-12 mx-auto max-w-7xl md:py-16 lg:py-20;
+  }
+
+  .section-title {
+    @apply mb-8 text-3xl font-bold text-center text-black md:text-4xl lg:text-5xl;
+  }
+
+  .section-subtitle {
+    @apply mb-4 text-xl font-semibold text-black md:text-2xl;
+  }
+}

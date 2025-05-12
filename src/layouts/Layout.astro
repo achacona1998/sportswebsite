@@ -1,0 +1,89 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Kiteboarding - El deporte que combina surf, wakeboard y parapente",
+  description = "Descubre todo sobre el kiteboarding: estilos, equipamiento, mejores spots, marcas populares y competiciones. ¡Aprende sobre este emocionante deporte acuático!",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/Logo.svg" />
+    <link rel="canonical" href={Astro.url.href} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="kiteboarding, kitesurf, deportes acuáticos, wing foiling, hydrofoil, wakeboarding, windsurf, spots de kitesurf, equipamiento kitesurf, cursos kitesurf"
+    />
+    <meta name="author" content="Sierra-Esperanza Creations" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/imagenes/Img1.avif" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url.href} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="/imagenes/Img1.avif" />
+
+    <!-- Favicon variations -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Font preloading for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Structured data for rich results -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsWebsite",
+        "name": "KiteWorld",
+        "url": "${Astro.url.href}",
+        "logo": "${Astro.url.origin}/images/logo.png",
+        "description": "${description}",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "${Astro.url.origin}/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "sameAs": [
+          "https://www.instagram.com/kiteworld",
+          "https://www.youtube.com/kiteworld",
+          "https://www.facebook.com/kiteworld"
+        ]
+      }
+    </script>
+  </head>
+  <body
+    class="font-sans antialiased bg-gradient-to-b from-10% from-sky-600 via-60% via-emerald-100 to-sky-500 text-gray-800 ">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  /* Estilos globales adicionales si se necesitan */
+</style>

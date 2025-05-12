@@ -1,0 +1,26 @@
+---
+import { galleryImages, headingInfoGaleria, videos } from "../constants/Const";
+import AnimatedSectionHeading from "../reactcomponents/AnimatedSectionHeading";
+import AnimatedGallery from "../reactcomponents/AnimatedGallery";
+import AnimatedVideos from "../reactcomponents/AnimatedVideos";
+
+// Gallery.astro
+---
+
+<section id="gallery" class="relative py-20">
+  <div
+    class="absolute inset-0 w-full h-full bg-gradient-to-b from-5% from-emerald-100 via-55% via-transparent
+    to-40% to-transparent -z-10">
+  </div>
+  <div class="section-container">
+    <AnimatedSectionHeading
+      client:visible
+      title={headingInfoGaleria.title}
+      description={headingInfoGaleria.description}
+    />
+
+    <AnimatedGallery client:visible images={galleryImages} />
+
+    <AnimatedVideos client:visible videos={videos} />
+  </div>
+</section>

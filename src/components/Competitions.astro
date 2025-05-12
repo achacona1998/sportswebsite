@@ -1,0 +1,33 @@
+---
+import {
+  categories,
+  olympicInfo,
+  headingInfoCompetitions,
+} from "../constants/Const";
+import AnimatedCompetitions from "../reactcomponents/AnimatedCompetitions";
+import AnimatedSectionHeading from "../reactcomponents/AnimatedSectionHeading";
+import { TextParallaxContentExample } from "../reactcomponents/textParallax";
+// Competitions.astro
+---
+
+<section id="competitions" class="relative py-20">
+  <div
+    class="absolute inset-0 w-full h-full bg-gradient-to-t from-5% from-emerald-100 via-55% via-transparent
+    to-40% to-transparent -z-10">
+  </div>
+  <div class="section-container">
+    <AnimatedSectionHeading
+      client:visible
+      title={headingInfoCompetitions.title}
+      description={headingInfoCompetitions.description}
+    />
+
+    <TextParallaxContentExample client:visible />
+
+    <AnimatedCompetitions
+      client:visible
+      olympicInfo={olympicInfo}
+      categories={categories}
+    />
+  </div>
+</section>

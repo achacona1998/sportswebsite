@@ -1,0 +1,35 @@
+---
+import AnimatedHero from "../reactcomponents/AnimatedHero";
+import { heroContent } from "../constants/Const";
+
+// Hero.astro
+---
+
+<section
+  id="intro"
+  class="flex relative items-center h-screen text-white bg-gray-900">
+  <!-- Imagen de fondo con overlay -->
+  <div class="absolute inset-0 z-0">
+    <div
+      class="absolute inset-0 z-10 bg-gradient-to-t from-10% from-sky-600 via-50% via-transparent
+    to-40% to-transparent">
+    </div>
+    <video
+      src="/videos/video1.webm"
+      autoplay
+      muted
+      loop
+      width="1920"
+      height="1080"
+      class="object-cover absolute inset-0 z-0 w-full h-full"></video>
+  </div>
+  <!-- Contenido animado -->
+  <AnimatedHero
+    client:load
+    title={heroContent.title}
+    description={heroContent.description}
+    primaryButton={heroContent.primaryButton}
+    secondaryButton={heroContent.secondaryButton}
+  />
+ 
+</section>

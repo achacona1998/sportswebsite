@@ -1,0 +1,30 @@
+---
+import StackedCardTestimonials from "../reactcomponents/stackedCard";
+import {
+  schoolRequirements,
+  tips,
+  headingInfoCursos,
+} from "../constants/Const";
+import AnimatedCourseInfo from "../reactcomponents/AnimatedCourseInfo";
+import AnimatedSectionHeading from "../reactcomponents/AnimatedSectionHeading";
+
+// Courses.astro
+---
+
+<section id="courses" class="py-20">
+  <div class="section-container">
+    <AnimatedSectionHeading
+      title={headingInfoCursos.title}
+      description={headingInfoCursos.description}
+      client:visible
+    />
+
+    <StackedCardTestimonials client:load />
+
+    <AnimatedCourseInfo
+      client:visible
+      tips={tips}
+      schoolRequirements={schoolRequirements}
+    />
+  </div>
+</section>

@@ -1,0 +1,42 @@
+---
+// Contact.astro
+import { socialMedia, headingInfoContacts } from "../constants/Const.js";
+import AnimatedSectionHeading from "../reactcomponents/AnimatedSectionHeading";
+import { TabsFAQ } from "../reactcomponents/tabsFAQ.jsx";
+---
+
+<section id="contact" class="relative">
+  <div
+    class="absolute inset-0 w-full h-full bg-gradient-to-t from-5% from-sky-800 via-55% via-transparent
+    to-40% to-transparent -z-10">
+  </div>
+  <div class="section-container">
+    <TabsFAQ client:load />
+  </div>
+
+  <!-- Redes sociales -->
+  <!-- <div class="text-center">
+    <h3 class="mb-6 text-xl font-bold">Síguenos en redes sociales</h3>
+
+    <div class="flex flex-wrap gap-4 justify-center">
+      {
+        socialMedia.map((social) => (
+          <a
+            href={social.url}
+            target="_blank"
+            class={`${social.color} text-white p-4 rounded-full hover:opacity-90 transition-opacity`}
+            aria-label={`Síguenos en ${social.name}`}>
+            <Fragment set:html={social.icon} />
+          </a>
+        ))
+      }
+    </div>
+
+    <p class="mt-8 text-gray-600">
+      También puedes escribirnos directamente a <a
+        href="mailto:info@kiteworld.com"
+        class="hover:underline">info@kiteworld.com</a
+      >
+    </p>
+  </div> -->
+</section>

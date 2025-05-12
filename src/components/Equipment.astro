@@ -1,0 +1,35 @@
+---
+import {
+  equipmentItems,
+  additionalEquipment,
+  headingInfoEquipo,
+  equipmentTips,
+} from "../constants/Const";
+import EquipmentGrid from "../reactcomponents/EquipmentGrid";
+import AdditionalEquipmentGrid from "../reactcomponents/AdditionalEquipmentGrid";
+import AnimatedEquipmentTips from "../reactcomponents/AnimatedEquipmentTips";
+import AnimatedSectionHeading from "../reactcomponents/AnimatedSectionHeading";
+
+// Equipment.astro
+---
+
+<section id="equipment" class="relative py-20">
+  <div class="section-container">
+    <AnimatedSectionHeading
+      client:visible
+      title={headingInfoEquipo.title}
+      description={headingInfoEquipo.description}
+    />
+    <EquipmentGrid client:load equipmentItems={equipmentItems} />
+
+    <AdditionalEquipmentGrid
+      client:load
+      additionalEquipment={additionalEquipment}
+    />
+    <AnimatedEquipmentTips
+      client:visible
+      title="Consejos para tu primer equipamiento"
+      tips={equipmentTips}
+    />
+  </div>
+</section>

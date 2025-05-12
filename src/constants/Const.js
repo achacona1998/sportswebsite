@@ -1,0 +1,885 @@
+import {
+  AirushLogo,
+  BestKiteboardingLogo,
+  BestKiteboardingMarca,
+  CabrinhaLogo,
+  CoreKiteboardingLogo,
+  DuotoneLogo,
+  Facebook,
+  FOneLogo,
+  HarlemLogo,
+  Instagram,
+  LiquidForceLogo,
+  LiquidForceMarca,
+  NaishLogo,
+  NorthKiteboardingLogo,
+  OzoneLogo,
+  Twitter,
+  WainmanHawaiiLogo,
+  WainmanHawaiiMarca,
+  YouTube,
+} from "./icons";
+
+export const socialMedia = [
+  {
+    name: "Instagram",
+    icon: Instagram,
+    url: "https://www.instagram.com/kiteboarding",
+  },
+  {
+    name: "Facebook",
+    icon: Facebook,
+    url: "https://www.facebook.com/kiteboarding",
+  },
+  {
+    name: "YouTube",
+    icon: YouTube,
+    url: "https://www.youtube.com/kiteboarding",
+  },
+  {
+    name: "Twitter",
+    icon: Twitter,
+    url: "https://twitter.com/kiteboarding",
+  },
+];
+
+export const topBrands = [
+  {
+    id: "duotone",
+    name: "Duotone",
+    description:
+      "Anteriormente North Kiteboarding, es una de las marcas líderes en el mercado, conocida por su innovación y calidad.",
+    logo: DuotoneLogo,
+    featured: "Neo y Evo (cometas), Select y Entity (tablas)",
+  },
+  {
+    id: "core",
+    name: "Core Kiteboarding",
+    description:
+      "Marca alemana reconocida por sus productos de alta gama y durabilidad excepcional.",
+    logo: CoreKiteboardingLogo,
+    featured: "GTS y XR (cometas), Fusion y Choice (tablas)",
+  },
+  {
+    id: "airush",
+    name: "Airush",
+    description:
+      "Con más de 15 años de experiencia, destacan por su compromiso con la sostenibilidad y productos duraderos.",
+    logo: AirushLogo,
+    featured: "Wave y Union (cometas), Switch y Apex (tablas)",
+  },
+  {
+    id: "north",
+    name: "North Kiteboarding",
+    description:
+      "Renacida en 2018, la nueva North se centra en la innovación tecnológica y el rendimiento.",
+    logo: NorthKiteboardingLogo,
+    featured: "Orbit y Reach (cometas), Atmos y Charge (tablas)",
+  },
+  {
+    id: "cabrinha",
+    name: "Cabrinha",
+    description:
+      "Fundada por Pete Cabrinha, es una de las marcas más reconocibles en el mundo del kiteboarding.",
+    logo: CabrinhaLogo,
+    featured: "Switchblade y Drifter (cometas), Stylus y Spectrum (tablas)",
+  },
+  {
+    id: "naish",
+    name: "Naish",
+    description:
+      "Una de las marcas pioneras fundada por el legendario Robby Naish, con amplia gama de productos.",
+    logo: NaishLogo,
+    featured: "Pivot y Dash (cometas), Motion y Traverse (tablas)",
+  },
+  {
+    id: "fone",
+    name: "F-One",
+    description:
+      "Marca francesa conocida por sus innovaciones en cometas, tablas y foils.",
+    logo: FOneLogo,
+    featured: "Bandit y Breeze (cometas), Trax y Mitu Pro Model (tablas)",
+  },
+  {
+    id: "ozone",
+    name: "Ozone",
+    description:
+      "Destacada por sus cometas de alto rendimiento y excelente control.",
+    logo: OzoneLogo,
+    featured: "Enduro y Edge (cometas), Code y Torque (tablas)",
+  },
+  {
+    id: "harlem",
+    name: "Harlem",
+    description:
+      "Empresa 100% española especializada en kitesurf y material asociado.",
+    logo: HarlemLogo,
+    featured: "Session y Panico (cometas), RDM y SDK (tablas)",
+  },
+];
+
+export const historicBrands = [
+  {
+    id: "wainman",
+    name: "Wainman Hawaii",
+    description:
+      'Fundada por el carismático Franz Wainman, revolucionó el diseño de las cometas con su "Smoke" sin costillas.',
+    logo: WainmanHawaiiLogo,
+    marca: WainmanHawaiiMarca,
+  },
+  {
+    id: "best",
+    name: "Best Kiteboarding",
+    description:
+      "Popular en los 2000s, conocida por sus cometas accesibles y de buena calidad-precio.",
+    logo: BestKiteboardingLogo,
+    marca: BestKiteboardingMarca,
+  },
+  {
+    id: "liquid",
+    name: "Liquid Force",
+    description:
+      "Con raíces en el wakeboard, tuvo gran influencia en el desarrollo del estilo wakestyle en kiteboarding.",
+    logo: LiquidForceLogo,
+    marca: LiquidForceMarca,
+  },
+];
+
+export const relatedSports = [
+  {
+    id: "windsurf",
+    name: "Windsurf",
+    description:
+      "Deporte acuático que combina elementos de la navegación a vela y el surf. Fue uno de los precursores del kiteboarding y comparte muchas similitudes en cuanto a la navegación con viento.",
+    image: "/Imagenes/relatedSports/Windsurf.avif",
+    influence:
+      "El windsurf aportó al kiteboarding conceptos fundamentales sobre navegación, aprovechamiento del viento y técnicas de planeo.",
+  },
+  {
+    id: "wakeboard",
+    name: "Wakeboarding",
+    description:
+      "Deporte acuático en el que el rider es remolcado por una lancha o un cable y realiza trucos sobre una tabla similar a un snowboard. Influyó enormemente en el estilo wakestyle del kiteboarding.",
+    image: "/Imagenes/relatedSports/Wakeboarding.avif",
+    influence:
+      "Del wakeboard, el kiteboarding adoptó muchos trucos, la forma de algunas tablas y elementos como obstáculos y sliders.",
+  },
+  {
+    id: "wingfoil",
+    name: "Wing Foiling",
+    description:
+      "Deporte emergente que combina un ala inflable (wing) que se sujeta con las manos y una tabla con hydrofoil. Es considerado por muchos como un híbrido entre el windsurf y el kiteboarding.",
+    image: "/Imagenes/relatedSports/WingFoiling.avif",
+    influence:
+      "El wing foiling es en parte una evolución del kiteboarding, tomando elementos del kitefoiling y simplificándolos con un ala sin líneas.",
+  },
+  {
+    id: "paragliding",
+    name: "Parapente",
+    description:
+      "Deporte aéreo en el que se utiliza un parapente, un planeador ligero y flexible. Las cometas de kiteboarding derivan en parte de la tecnología de los parapentes.",
+    image: "/Imagenes/relatedSports/Parapente.avif",
+    influence:
+      "El diseño de las cometas de kiteboarding, especialmente las de tipo foil, está directamente influenciado por la tecnología del parapente.",
+  },
+];
+
+export const competitions = [
+  {
+    id: "gka",
+    name: "GKA Kite World Tour",
+    description:
+      "El circuito mundial oficial que incluye las disciplinas de Kite-Surf (olas), Freestyle y Hydrofoil. Reúne a los mejores riders del mundo en diferentes spots.",
+    image: "/Imagenes/competitions/GKA.avif",
+    website: "https://www.gkakiteworldtour.com/",
+    champions: ["Airton Cozzolino", "Mikaili Sol", "Daniela Moroz"],
+  },
+  {
+    id: "kota",
+    name: "Red Bull King of the Air",
+    description:
+      "La competición más extrema de Big Air, celebrada anualmente en Ciudad del Cabo. Premia los saltos más altos y las maniobras más radicales con vientos de más de 30 nudos.",
+    image: "/Imagenes/competitions/RedBull.avif",
+    website: "https://www.redbull.com/int-en/event-series/king-of-the-air",
+    champions: ["Aaron Hadlow", "Kevin Langeree", "Jesse Richman"],
+  },
+  {
+    id: "lord",
+    name: "Lord of the Tram",
+    description:
+      "Competición de estilo libre que se celebra en Tarifa, España. Combina elementos de wakestyle y freestyle en un formato único con obstáculos.",
+    image: "/Imagenes/competitions/Lord.avif",
+    website: "https://www.lordofthetram.com/",
+    champions: ["Liam Whaley", "Set Teixeira", "Oswald Smith"],
+  },
+];
+
+export const ikoLevels = [
+  {
+    level: "Level 1",
+    title: "Descubrir el Kiteboarding",
+    description:
+      "Introducción al kiteboarding, teoría básica, seguridad y primeros pasos con la cometa en tierra.",
+    skills: [
+      "Conocimiento del equipamiento",
+      "Evaluación de condiciones",
+      "Control básico de la cometa en tierra",
+      "Sistemas de seguridad",
+    ],
+  },
+  {
+    level: "Level 2",
+    title: "Control de la Cometa",
+    description:
+      'Desarrollo de habilidades de control de la cometa tanto en tierra como en agua. Primeros "body drags".',
+    skills: [
+      "Control avanzado de la cometa",
+      "Body drag con dirección",
+      "Recuperación de la tabla en el agua",
+      "Técnicas de auto-rescate",
+    ],
+  },
+  {
+    level: "Level 3",
+    title: "Primeros Deslizamientos",
+    description:
+      "Aprendizaje del water start y primeros deslizamientos con la tabla.",
+    skills: [
+      "Water start",
+      "Navegación en dirección constante",
+      "Cambio de dirección básico",
+      "Salida y llegada a la playa de forma segura",
+    ],
+  },
+  {
+    level: "Level 4",
+    title: "Navegación Independiente",
+    description:
+      "Desarrollo de habilidades para navegar de forma autónoma en ambas direcciones.",
+    skills: [
+      "Navegación upwind (contra el viento)",
+      "Giros básicos",
+      "Elección del spot adecuado",
+      "Navegación con otros kiters",
+    ],
+  },
+  {
+    level: "Level 5",
+    title: "Variación de Potencia",
+    description:
+      "Desarrollo de habilidades más avanzadas de navegación y primeros trucos básicos.",
+    skills: [
+      "Transiciones suaves",
+      "Pequeños saltos controlados",
+      "Técnicas de navegación en diferentes condiciones",
+      "Ajuste del equipo",
+    ],
+  },
+];
+
+export const featuredSpots = [
+  {
+    id: "tarifa",
+    name: "Tarifa, España",
+    description:
+      "Conocida como la capital europea del viento, ofrece condiciones perfectas durante casi todo el año. El Levante y el Poniente garantizan vientos constantes y fuertes.",
+    image: "/Imagenes/featuredSports/Tarifa.avif",
+    season: "Abril a Octubre",
+    level: "Todos los niveles",
+    wind: "15-35 nudos",
+    highlights: [
+      "Viento constante",
+      "Múltiples playas",
+      "Gran comunidad de kiters",
+      "Infraestructura completa",
+    ],
+  },
+  {
+    id: "capetown",
+    name: "Ciudad del Cabo, Sudáfrica",
+    description:
+      "Blouberg Beach ofrece vientos térmicos constantes y vistas espectaculares de Table Mountain. Uno de los spots más fotogénicos del mundo.",
+    image: "/Imagenes/featuredSports/Cabo.avif",
+    season: "Noviembre a Marzo",
+    level: "Intermedio a Avanzado",
+    wind: "20-35 nudos",
+    highlights: [
+      "Vistas espectaculares",
+      "Olas perfectas",
+      "Clima cálido",
+      "Comunidad internacional",
+    ],
+  },
+  {
+    id: "cabarete",
+    name: "Cabarete, República Dominicana",
+    description:
+      "El paraíso caribeño del kiteboarding, con vientos térmicos constantes por la tarde y aguas cálidas y cristalinas.",
+    image: "/Imagenes/featuredSports/Cabarete.avif",
+    season: "Mayo a Agosto",
+    level: "Principiante a Avanzado",
+    wind: "15-25 nudos",
+    highlights: [
+      "Aguas cálidas",
+      "Ambiente festivo",
+      "Múltiples escuelas",
+      "Precios accesibles",
+    ],
+  },
+];
+
+export const otherSpots = [
+  {
+    region: "Europa",
+    spots: [
+      { name: "Lefkada, Grecia", level: "Todos los niveles" },
+      { name: "Lo Stagnone, Italia", level: "Principiante a Intermedio" },
+      { name: "Essaouira, Marruecos", level: "Intermedio a Avanzado" },
+      { name: "Dakhla, Marruecos", level: "Todos los niveles" },
+      { name: "Fuerteventura, España", level: "Intermedio a Avanzado" },
+    ],
+  },
+  {
+    region: "América",
+    spots: [
+      { name: "La Ventana, México", level: "Todos los niveles" },
+      { name: "Cumbuco, Brasil", level: "Principiante a Avanzado" },
+      { name: "Hood River, EEUU", level: "Intermedio a Avanzado" },
+      { name: "Jericoacoara, Brasil", level: "Intermedio a Avanzado" },
+      { name: "Union Island, Caribe", level: "Principiante a Intermedio" },
+    ],
+  },
+  {
+    region: "Asia y Oceanía",
+    spots: [
+      { name: "Mui Ne, Vietnam", level: "Principiante a Avanzado" },
+      { name: "Boracay, Filipinas", level: "Todos los niveles" },
+      { name: "Kalpitiya, Sri Lanka", level: "Principiante a Intermedio" },
+      { name: "Perth, Australia", level: "Intermedio a Avanzado" },
+      { name: "Koh Phangan, Tailandia", level: "Principiante a Intermedio" },
+    ],
+  },
+];
+
+export const styles = [
+  {
+    id: "freeride",
+    name: "Freeride",
+    description:
+      "El estilo más común y versátil. Consiste en navegar libremente por el agua, realizando giros, saltos y disfrutando del planeo.",
+    image: "/Imagenes/styles/Freeride.avif",
+  },
+  {
+    id: "wave",
+    name: "Kitesurfing (Wave Style)",
+    description:
+      "Combina el kiteboarding con el surf, aprovechando las olas para realizar maniobras similares al surf tradicional.",
+    image: "/Imagenes/styles/KiteSurfing.avif",
+  },
+  {
+    id: "wake",
+    name: "Wake Style",
+    description:
+      "Inspirado en el wakeboarding, se enfoca en realizar trucos técnicos como grabs, rotaciones y maniobras sobre obstáculos.",
+    image: "/Imagenes/styles/WakeStyle.avif",
+  },
+  {
+    id: "foiling",
+    name: "Kitefoiling",
+    description:
+      "Utiliza una tabla con hydrofoil que se eleva sobre el agua, reduciendo la fricción y permitiendo navegar con vientos muy ligeros.",
+    image: "/Imagenes/styles/kitefoling.avif",
+  },
+  {
+    id: "snow",
+    name: "Kitesnow",
+    description:
+      "Variante invernal que se practica sobre nieve, usando esquís o snowboard en lugar de una tabla acuática.",
+    image: "/Imagenes/styles/KiteSnow.avif",
+  },
+  {
+    id: "race",
+    name: "Race",
+    description:
+      "Centrado en la velocidad y competición, utiliza equipamiento específico para maximizar la velocidad y eficiencia.",
+    image: "/Imagenes/styles/Race.avif",
+  },
+  {
+    id: "bigair",
+    name: "Big Air",
+    description:
+      "Se enfoca en realizar saltos extremadamente altos y maniobras aéreas espectaculares.",
+    image: "/Imagenes/styles/BigAir.avif",
+  },
+  {
+    id: "freestyle",
+    name: "Freestyle",
+    description:
+      "Combina elementos técnicos y creativos, con un enfoque en trucos, rotaciones y maniobras complejas.",
+    image: "/Imagenes/styles/freestyle.avif",
+  },
+  {
+    id: "land",
+    name: "Kiteboarding en tierra",
+    description:
+      "Se practica en playas, desiertos o superficies planas usando kitebuggies (triciclos) o mountainboards.",
+    image: "/Imagenes/styles/KiteEnTierra.avif",
+  },
+];
+
+export const equipmentItems = [
+  {
+    id: "kite",
+    name: "Cometa (Kite)",
+    description:
+      "El elemento principal que proporciona la potencia. Existen diferentes tipos según el nivel y estilo: C-kites, bow kites, delta kites, y foil kites.",
+    image: "/Imagenes/equipments/cometa.avif",
+  },
+  {
+    id: "bar",
+    name: "Barra de Control",
+    description:
+      "Permite controlar la cometa y su potencia. Incluye las líneas que conectan con la cometa y sistemas de seguridad.",
+    image: "/Imagenes/equipments/barra.avif",
+  },
+  {
+    id: "harness",
+    name: "Arnés",
+    description:
+      "Distribuye la tracción de la cometa por la cadera o cintura (arnés de cintura) o por la parte baja de la espalda y glúteos (arnés de asiento).",
+    image: "/Imagenes/equipments/arnes.avif",
+  },
+  {
+    id: "board",
+    name: "Tabla",
+    description:
+      "Varía según el estilo: twin-tip (bidireccionales), direccionales (tipo surf), race boards, o hydrofoil.",
+    image: "/Imagenes/equipments/tabla.avif",
+  },
+  {
+    id: "leash",
+    name: "Leash",
+    description:
+      "Cable de seguridad que conecta al kitesurfista con la tabla para no perderla en caso de caída.",
+    image: "/Imagenes/equipments/leash.avif",
+  },
+  {
+    id: "pump",
+    name: "Bomba",
+    description:
+      "Utilizada para inflar la cometa antes de entrar al agua y desinflarla al terminar.",
+    image: "/Imagenes/equipments/bomba.avif",
+  },
+];
+
+export const additionalEquipment = [
+  {
+    id: "lifejacket",
+    name: "Chaleco Salvavidas",
+    description:
+      "Recomendado para principiantes y en condiciones de navegación complejas.",
+    image: "/Imagenes/equipments/chaleco.avif",
+  },
+  {
+    id: "helmet",
+    name: "Casco",
+    description:
+      "Protección esencial, especialmente en condiciones de viento fuerte, aguas poco profundas o cuando se realizan saltos.",
+    image: "/Imagenes/equipments/casco.avif",
+  },
+  {
+    id: "wetsuit",
+    name: "Traje de Neopreno",
+    description:
+      "Proporciona aislamiento térmico y protección contra el sol, fundamental en aguas frías.",
+    image: "/Imagenes/equipments/traje.avif",
+  },
+  {
+    id: "boots",
+    name: "Escarpines",
+    description:
+      "Protegen los pies de cortes, frío y ayudan a mantener un mejor agarre en la tabla.",
+    image: "/Imagenes/equipments/escarpines.avif",
+  },
+];
+
+export const equipmentTips = [
+  "Consulta con instructores certificados antes de comprar tu primer equipo.",
+  "Considera adquirir equipo usado para tu etapa de aprendizaje.",
+  "El tamaño de la cometa depende de tu peso y las condiciones de viento habituales.",
+  "Invierte en equipo de calidad y con buenos sistemas de seguridad.",
+  "No escatimes en protección: un buen casco y chaleco pueden salvarte la vida.",
+];
+
+export const tips = [
+  "Comienza con clases profesionales, no intentes aprender por tu cuenta.",
+  "Las primeras sesiones se centran en la seguridad y el control de la cometa.",
+  "Practica el montaje y desmontaje de tu equipo hasta que sea automático.",
+  "Sé paciente, el kiteboarding tiene una curva de aprendizaje pronunciada al principio.",
+  "Practica en condiciones de viento constante, evita los días con rachas.",
+];
+
+export const schoolRequirements = [
+  "Instructores con certificación IKO actualizada",
+  "Equipamiento moderno y en buen estado",
+  "Protocolos de seguridad claros",
+  "Buenas referencias de otros alumnos",
+  "Experiencia demostrable en la enseñanza",
+];
+
+export const travelTips = [
+  "Investiga las condiciones de viento y temporadas antes de reservar.",
+  "Consulta las restricciones para viajar con equipo de kiteboarding.",
+  "Contrata un seguro que cubra la práctica de deportes acuáticos.",
+  "Alójate cerca de la playa para maximizar tu tiempo en el agua.",
+  "Considera alquilar equipo en destino para evitar cargos extra en vuelos.",
+  "Respeta siempre las normas locales y la cultura del spot que visites.",
+];
+
+export const olympicInfo = {
+  title: "Formula Kite: Disciplina Olímpica",
+  description:
+    "A partir de los Juegos Olímpicos de París 2024, el Formula Kite se incluye como disciplina olímpica. Esta modalidad de hydrofoil representa el reconocimiento definitivo del kiteboarding como deporte de élite a nivel mundial.",
+  details: [
+    "Formato de competición: carreras cortas con salidas y llegadas en la playa",
+    "Equipamiento: tabla con hydrofoil y cometa específica de competición",
+    "Velocidades: pueden superar los 80 km/h",
+    "Atletas: participarán 20 hombres y 20 mujeres",
+    "Sede: Marsella (Francia)",
+  ],
+};
+
+export const categories = [
+  {
+    title: "Freestyle",
+    description:
+      "Centrada en trucos técnicos y maniobras aéreas complejas. Se puntúa la dificultad, altura, ejecución y variedad.",
+  },
+  {
+    title: "Big Air",
+    description:
+      "Premia los saltos más altos y las maniobras más extremas. Se compite con vientos fuertes y condiciones radicales.",
+  },
+  {
+    title: "Wave",
+    description:
+      "Similar al surf, se evalúa la calidad de las maniobras en las olas y el aprovechamiento de las condiciones.",
+  },
+  {
+    title: "Race",
+    description:
+      "Competiciones de velocidad en circuitos. Incluye Formula Kite (hydrofoil) y Twin Tip Racing, entre otros formatos.",
+  },
+];
+export const headingInfoCompetitions = {
+  title: "Competiciones",
+  description:
+    "El kiteboarding competitivo ha evolucionado rápidamente hasta llegar a los Juegos Olímpicos. Descubre las diferentes modalidades de competición y los eventos más importantes.",
+};
+export const headingInfoBrands = {
+  title: "Marcas Top de Kiteboarding",
+  description: "",
+};
+export const headingInfoContacts = {
+  title: "Contacto y Redes Sociales",
+  description:
+    "¿Tienes preguntas sobre el kiteboarding? ¿Quieres compartir tu experiencia conectar con otros riders? Contáctanos o síguenos en redes sociales.",
+};
+export const headingInfoCursos = {
+  title: "Cursos y Aprendizaje",
+  description:
+    "El kiteboarding es un deporte que requiere formación profesional. Para garantizar tu seguridad y progreso, es fundamental aprender con instructores certificados.",
+};
+export const headingInfoEquipo = {
+  title: "Equipo Necesario",
+  description:
+    "Para practicar kiteboarding necesitarás algunos elementos esenciales. Aquí te mostramos los componentes básicos para empezar en este deporte.",
+};
+export const headingInfoGaleria = {
+  title: "Galería de Fotos y Videos",
+  description:
+    "Disfruta de impresionantes imágenes y videos que capturan la emoción y belleza del kiteboarding en diferentes estilos y localizaciones.",
+};
+export const headingInfoSpots = {
+  title: "Spots de Kitesurf",
+  description:
+    " Descubre los mejores lugares del mundo para practicar kiteboarding, desde playas con vientos constantes hasta paraísos tropicales con aguas cristalinas.",
+};
+export const headingInfoEstilos = {
+  title: "Estilos de Kiteboarding",
+  description:
+    "El kiteboarding ofrece múltiples disciplinas que se adaptan a diferentes condiciones, preferencias y niveles de habilidad. Descubre cuál es el estilo que mejor se adapta a ti.",
+};
+export const headingInfoRelatedSports = {
+  title: "Deportes Relacionados",
+  description:
+    "El kiteboarding ha evolucionado a partir de varios deportes y ha influido en el desarrollo de otros. Conoce las conexiones entre estas disciplinas.",
+};
+
+export const galleryImages = [
+  {
+    id: "img1",
+    src: "/Imagenes/galeria/kitesurfingcapetown.avif",
+    alt: "Kitesurfing en Cape Town",
+    category: "wave",
+  },
+  {
+    id: "img2",
+    src: "/Imagenes/galeria/freestyle.avif",
+    alt: "Freestyle kiteboarding",
+    category: "freestyle",
+  },
+  {
+    id: "img3",
+    src: "/Imagenes/galeria/tarifakite.avif",
+    alt: "Kiteboarding en Tarifa",
+    category: "freeride",
+  },
+  {
+    id: "img4",
+    src: "/Imagenes/galeria/Kitefoiling.avif",
+    alt: "Kitefoiling",
+    category: "foil",
+  },
+  {
+    id: "img5",
+    src: "/Imagenes/galeria/bigair.avif",
+    alt: "Big Air kiteboarding",
+    category: "bigair",
+  },
+  {
+    id: "img6",
+    src: "/Imagenes/galeria/kitesurfingCaribe.avif",
+    alt: "Kiteboarding en el Caribe",
+    category: "freeride",
+  },
+  {
+    id: "img7",
+    src: "/Imagenes/galeria/race.avif",
+    alt: "Race kiteboarding",
+    category: "race",
+  },
+  {
+    id: "img8",
+    src: "/Imagenes/galeria/Windsurf.avif",
+    alt: "Race kiteboarding",
+    category: "race",
+  },
+  {
+    id: "img9",
+    src: "/Imagenes/galeria/snow.avif",
+    alt: "Kitesnow",
+    category: "snow",
+  },
+];
+
+export const videos = [
+  {
+    id: "vid1",
+    title: "Los mejores momentos del King of the Air 2023",
+    thumbnail: "/Imagenes/thumbnail/vid1.avif",
+    embedUrl: "https://www.youtube.com/watch?v=Ab5d53-vOwY",
+    category: "competition",
+  },
+  {
+    id: "vid2",
+    title: "Tutorial: Primeros pasos en kiteboarding",
+    thumbnail: "/Imagenes/thumbnail/vid2.avif",
+    embedUrl: "https://www.youtube.com/watch?v=gbaiccsI1-A",
+    category: "tutorial",
+  },
+  {
+    id: "vid3",
+    title: "Los mejores spots de kiteboarding en 2023",
+    thumbnail: "/Imagenes/thumbnail/vid3.avif",
+    embedUrl: "https://www.youtube.com/watch?v=vGBSZesn6GQ",
+    category: "travel",
+  },
+  {
+    id: "vid4",
+    title: "Trucos avanzados de freestyle",
+    thumbnail: "/Imagenes/thumbnail/vid4.avif",
+    embedUrl: "https://www.youtube.com/watch?v=gNqv2q5Z6Wg",
+    category: "tutorial",
+  },
+];
+export const heroContent = {
+  title: "Kiteboarding: Libertad sobre el agua",
+  description:
+    "Descubre un deporte que combina la emoción del surf, la adrenalina del wakeboarding y la libertad del parapente.",
+  primaryButton: {
+    text: "Descubrir estilos",
+    url: "#styles",
+  },
+  secondaryButton: {
+    text: "Aprender a navegar",
+    url: "#courses",
+  },
+};
+
+export const TABS = [
+  "Estilos",
+  "Equipamiento",
+  "Marcas",
+  "Lugares",
+  "Competiciones",
+  "Seguridad",
+  "Aprendizaje",
+];
+
+export const QUESTIONS = {
+  Estilos: [
+    {
+      question: "¿Qué estilos de kiteboarding son los más populares?",
+      answer:
+        "Freeride (básico), Freestyle (trucos), Big Air (saltos altos) y Kitefoiling (hidroala). El Race también gana relevancia desde su inclusión olímpica.",
+    },
+    {
+      question: "¿En qué se diferencia el Kitesurfing del Freeride?",
+      answer:
+        "El Kitesurfing usa tablas de surf para olas, mientras el Freeride emplea tablas twintip bidireccionales para navegación versátil y saltos básicos.",
+    },
+    {
+      question: "¿Qué estilo requiere menos viento?",
+      answer:
+        "El Kitefoiling, gracias a la hidroala que reduce la resistencia, permitiendo navegar incluso con vientos suaves (desde 8 nudos).",
+    },
+    {
+      question: "¿Puedo practicar Wake Style sin un parque acuático?",
+      answer:
+        "Sí, pero es ideal usar obstáculos flotantes o rampas en lagos. En el mar, se adapta con olas y maniobras técnicas.",
+    },
+  ],
+  Equipamiento: [
+    {
+      question: "¿Qué tabla recomiendan para principiantes?",
+      answer:
+        "Tablas twintip, por su bidireccionalidad y estabilidad. Marcas como Duotone o North ofrecen modelos accesibles.",
+    },
+    {
+      question: "¿Qué tipo de cometa es mejor para Freestyle?",
+      answer:
+        "Cometas híbridas o C-kite, que ofrecen potencia controlada y relanzamiento rápido para trucos aéreos.",
+    },
+    {
+      question: "¿Es necesario usar botas en Wake Style?",
+      answer:
+        "Sí, las botas fijan mejor los pies a la tabla, esencial para trucos en obstáculos y mayor control en rampas.",
+    },
+    {
+      question: "¿Qué equipo se usa en Kitesnow?",
+      answer:
+        "Cometas no inflables (foil kites), tablas de snowboard adaptadas o esquís, y arneses específicos para nieve.",
+    },
+  ],
+  Marcas: [
+    {
+      question: "¿Qué marca es líder en hidroalas?",
+      answer:
+        "F-One destaca por sus diseños innovadores de hydrofoils, usados en competiciones de Race y Kitefoiling.",
+    },
+    {
+      question: "¿Duotone y North son la misma empresa?",
+      answer:
+        "Sí, North Kiteboarding se renombró como Duotone en 2018, manteniendo su enfoque en equipos de alta gama.",
+    },
+    {
+      question: "¿Qué marca es ideal para Big Air?",
+      answer:
+        "Core Kiteboarding, con cometas como el Nexus, diseñadas para potencia máxima y saltos extremos.",
+    },
+    {
+      question: "¿Existen marcas económicas para principiantes?",
+      answer:
+        "Sí, Harlem Kiteboarding ofrece equipos entry-level sin sacrificar seguridad. También se recomienda comprar kits usados certificados.",
+    },
+  ],
+  Lugares: [
+    {
+      question: "¿Cuál es el mejor lugar para Big Air?",
+      answer:
+        "Cape Town (Sudáfrica), famoso por sus vientos fuertes y constantes de octubre a febrero.",
+    },
+    {
+      question: "¿Dónde practicar Kitesnow en Europa?",
+      answer:
+        "En los Alpes: spots como Silvaplana (Suiza) o Tarifa en invierno, cuando lagunas se congelan.",
+    },
+    {
+      question: "¿Es seguro navegar en Tarifa?",
+      answer:
+        "Sí, pero hay zonas delimitadas para evitar colisiones. Ideal tomar cursos locales para entender corrientes y vientos cruzados.",
+    },
+    {
+      question: "¿Qué spot tiene las mejores olas para Kitesurfing?",
+      answer:
+        "Maui (Hawái), aunque Cabarete Beach (República Dominicana) es más accesible para riders internacionales.",
+    },
+  ],
+  Competiciones: [
+    {
+      question: "¿Qué es el King of the Air?",
+      answer:
+        "La competición más prestigiosa de Big Air, celebrada en Cape Town. Evalúa altura, estilo y control en saltos.",
+    },
+    {
+      question: "¿Cómo clasificar al GKA World Tour?",
+      answer:
+        "Participando en eventos regionales con puntuación IKO. Los top 16 de cada disciplina obtienen plazas.",
+    },
+    {
+      question: "¿Hay competiciones de Kitesnow?",
+      answer:
+        "Sí, como el Red Bull Ragnarok en Noruega, que combina velocidad y trucos en nieve.",
+    },
+    {
+      question: "¿Qué disciplina es olímpica?",
+      answer:
+        "El Race (carreras con hydrofoil), debutó en París 2024. Se compite en circuitos marcados con boyas.",
+    },
+  ],
+  Seguridad: [
+    {
+      question: "¿Por qué usar un leash de seguridad?",
+      answer:
+        "Evita perder la tabla tras caídas y permite desactivar rápidamente la cometa con el sistema quick release.",
+    },
+    {
+      question: "¿Qué hacer si el viento sube repentinamente?",
+      answer:
+        "Reducir el tamaño de la cometa inmediatamente o salir del agua. Nunca forzar el equipo.",
+    },
+    {
+      question: "¿Es seguro practicar solo?",
+      answer:
+        "No. Siempre navegar con alguien cerca y avisar tu ubicación. Usar chaleco con GPS en zonas remotas.",
+    },
+    {
+      question: "¿Cómo evitar lesiones en Freestyle?",
+      answer:
+        "Usar casco y protecciones articulares, dominar primero caídas controladas, y evitar trucos complejos sin supervisión.",
+    },
+  ],
+  Aprendizaje: [
+    {
+      question: "¿Qué enseña el curso IKO nivel 1?",
+      answer:
+        "Control básico de la cometa en tierra, body dragging (navegar sin tabla) y normas de seguridad internacionales.",
+    },
+    {
+      question: "¿Puedo aprender sin instructor?",
+      answer:
+        "No es recomendable. El kiteboarding tiene riesgos altos; un instructor certificado evita malos hábitos y accidentes.",
+    },
+    {
+      question: "¿Hay cursos para niños?",
+      answer:
+        "Sí, desde los 10 años con equipos adaptados (cometas pequeñas y tablas estables). Requiere autorización parental.",
+    },
+    {
+      question: "¿Qué hacer si no progreso?",
+      answer:
+        "Practicar en condiciones de viento constante, grabar sesiones para analizar errores, y tomar clases avanzadas de técnica.",
+    },
+  ],
+};

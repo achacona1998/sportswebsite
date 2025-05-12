@@ -1,0 +1,18 @@
+---
+import { headingInfoEstilos, styles } from "../constants/Const";
+import KiteStylesGrid from "../reactcomponents/KiteStylesGrid";
+import AnimatedSectionHeading from "../reactcomponents/AnimatedSectionHeading";
+// KiteStyles.astro
+---
+
+<section id="styles" class="py-20">
+  <div class="section-container">
+    <AnimatedSectionHeading
+      client:visible
+      title={headingInfoEstilos.title}
+      description={headingInfoEstilos.description}
+    />
+
+    <KiteStylesGrid client:load styles={styles} />
+  </div>
+</section>

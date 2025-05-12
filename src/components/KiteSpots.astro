@@ -1,0 +1,26 @@
+---
+import { headingInfoSpots, otherSpots, travelTips } from "../constants/Const";
+import VerticalSlideFeatures from "../reactcomponents/VerticalSlideFeatures";
+import AnimatedSpotRegions from "../reactcomponents/AnimatedSpotRegions";
+import AnimatedSectionHeading from "../reactcomponents/AnimatedSectionHeading";
+import { Icon1 } from "../constants/icons";
+---
+
+<section id="spots" class="py-20">
+  <div class="section-container">
+    <AnimatedSectionHeading
+      client:visible
+      title={headingInfoSpots.title}
+      description={headingInfoSpots.description}
+    />
+    <VerticalSlideFeatures client:visible />
+    <div class="mt-16">
+      <AnimatedSpotRegions
+        client:visible
+        otherSpots={otherSpots}
+        travelTips={travelTips}
+      />
+    </div>
+   
+  </div>
+</section>

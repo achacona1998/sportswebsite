@@ -1,0 +1,28 @@
+---
+// Brands.astro
+import RibbonLogos from "../reactcomponents/ribbonLogos.jsx";
+import TabsFeatures from "../reactcomponents/TabsFeatures";
+import AnimatedSectionHeading from "../reactcomponents/AnimatedSectionHeading";
+import BrandSelectionGuide from "../reactcomponents/BrandSelectionGuide";
+import { headingInfoBrands } from "../constants/Const";
+---
+
+<section id="brands" class="py-20">
+  <AnimatedSectionHeading
+    client:visible
+    title={headingInfoBrands.title}
+    description={headingInfoBrands.description}
+  />
+  <RibbonLogos client:load />
+
+  <div class="section-container">
+    <div class="p-8 mb-12 text-white rounded-lg">
+      <h3 class="mb-6 text-2xl font-bold text-center text-black">
+        Mención honorífica a marcas históricas
+      </h3>
+      <TabsFeatures client:load />
+    </div>
+
+    <BrandSelectionGuide client:visible />
+  </div>
+</section>
