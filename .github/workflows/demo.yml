@@ -3,7 +3,7 @@ name: Deploy Astro site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Cambia si usas otra rama
+      - main
 
 permissions:
   contents: write
@@ -31,6 +31,9 @@ jobs:
 
       - name: Build site with pnpm
         run: pnpm run build
+
+      - name: Disable Jekyll
+        run: touch ./dist/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
